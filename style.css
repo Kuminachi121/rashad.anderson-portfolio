@@ -21,7 +21,7 @@ body {
 header {
     display: flex;
     flex-wrap: wrap;
-    justify-content: right;
+    justify-content: space-between;
     align-items: center;
     padding: 1%;
     text-align: right;
@@ -51,6 +51,7 @@ nav a:hover {
     text-align: right;
     color: var(--red);
     font-weight: bold;
+    display: contents;
 }
 
 div h1 {
@@ -59,6 +60,18 @@ div h1 {
     right: 850px;
     align-items: center;
     display: flex;
+}
+
+img {
+  width: 25%;
+  align-self: center;
+  margin: 5%;
+  border: red;
+    border-width: 16px;
+    border-style: solid;
+    padding: 22px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 div h2 {
@@ -75,12 +88,13 @@ div h2 {
     border-style: solid;
     width: 50%;
     position: relative;
-    right: 245px;
-    top: 200px;
+    top: 5px;
     margin: auto;
     font-family: sans-serif;
     color:var(--red);
     padding: 51px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .works {
@@ -89,14 +103,18 @@ div h2 {
     border-style: solid;
     width: 50%;
     position: relative;
-    left: 240px;
-    top: 305px;
+    top: 85px;
     margin: auto;
     font-family: sans-serif;
     color:var(--red);
     padding: 51px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.works div {
+  top: 25px;
+}
 footer {
         display: flex;
         justify-content: center;
@@ -104,3 +122,30 @@ footer {
         background-color: var(--red);
         color: var(--dark);
 } 
+
+@media screen and (max-width: 992px) {
+    section {
+      width: 50%;
+    }
+    header {
+      background: red;
+    }
+    p {
+        color: yellow;
+    }
+    .page-title {
+      color: black;
+    }
+  
+  
+  @media screen and (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+    header {
+      background: orange;
+    }
+    p {
+      color: orange;
+    }
+  }
