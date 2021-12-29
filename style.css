@@ -115,6 +115,22 @@ div h2 {
 .works div {
   top: 25px;
 }
+
+.contactme {
+  border: orange;
+  border-width: 2px;
+  border-style: solid;
+  width: 50%;
+  position: relative;
+  top: 170px;
+  margin: auto;
+  font-family: sans-serif;
+  color:var(--red);
+  padding: 51px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 footer {
         display: flex;
         justify-content: center;
